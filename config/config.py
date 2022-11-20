@@ -17,18 +17,18 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "9526718"))
+API_HASH = getenv("API_HASH", "a7a0125d9cbf4a2e2d6f3ab2773f50a2")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", 5852900326:AAFrRM-UUuteP0xiCAA5q8f2ecw_73uDjIA)
+BOT_TOKEN = getenv("BOT_TOKEN", "5852900326:AAFrRM-UUuteP0xiCAA5q8f2ecw_73uDjIA")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://benj4712:benj47123@cluster0.2lw2c.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "60")
+    getenv("DURATION_LIMIT", "600")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
@@ -40,7 +40,7 @@ SONG_DOWNLOAD_DURATION = int(
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME" "SelfMusicBot")
 
 # Your User ID.
 OWNER_ID = list(
@@ -56,7 +56,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TeamYukki/YukkiMusicBot",
+    "https://github.com/cmaevm/MBot",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -110,10 +110,10 @@ SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "3"))
 
 # Maximum Limit Allowed for users to save playlists on bot's server
-SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "30"))
+SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "70"))
 
 # MaximuM limit for fetching playlist's track from youtube, spotify, apple links.
-PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
+PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "75"))
 
 # Cleanmode time after which bot will delete its old messages from chats
 CLEANMODE_DELETE_MINS = int(
@@ -128,7 +128,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(
 )  # Remember to give value in bytes
 
 TG_VIDEO_FILESIZE_LIMIT = int(
-    getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824")
+    getenv("TG_VIDEO_FILESIZE_LIMIT", "5073741824")
 )  # Remember to give value in bytes
 
 # Chceckout https://www.gbmb.org/mb-to-bytes  for converting mb to bytes
@@ -138,7 +138,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", BQA68ynKZrYTPk4d2DFiMO1R8nAe5hPVZRCqEjZSeRdnmvNnZ-1g5GuHuXTjgZiDBwJnSHnSyNRhp8kxOvZCHN5rc7etTMRGB54XC9mUhmVDh0GNqPYBGY_jY_yqTZ1VduFhRZCu4xw-iTaENrBroVf9oABHsmq7nlikzDuSA4WIl6rZ9dioetcOcsSi1PIHZALUDy8-OK9wn-DsLN41laXpHJk-pR29A1AijDPPlKdZ_bYhi0Yjr58bsJL7TFwTQldhjgOFh3W5luQnjtRlmWvVP33EHbikuh6LTivG4OesqrYbNdY15YszUASfgrHYhzJUUQTPCaFBUcG1rBe7VpnuAAAAAU_a2O8A)
+STRING1 = getenv("STRING_SESSION", "BQA68ynKZrYTPk4d2DFiMO1R8nAe5hPVZRCqEjZSeRdnmvNnZ-1g5GuHuXTjgZiDBwJnSHnSyNRhp8kxOvZCHN5rc7etTMRGB54XC9mUhmVDh0GNqPYBGY_jY_yqTZ1VduFhRZCu4xw-iTaENrBroVf9oABHsmq7nlikzDuSA4WIl6rZ9dioetcOcsSi1PIHZALUDy8-OK9wn-DsLN41laXpHJk-pR29A1AijDPPlKdZ_bYhi0Yjr58bsJL7TFwTQldhjgOFh3W5luQnjtRlmWvVP33EHbikuh6LTivG4OesqrYbNdY15YszUASfgrHYhzJUUQTPCaFBUcG1rBe7VpnuAAAAAU_a2O8A")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
